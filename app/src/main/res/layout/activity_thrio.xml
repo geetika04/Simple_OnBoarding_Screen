@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/destination_img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/undraw_destinations"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Next tour Planning"
+        android:textColor="#C0F5C1"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/destination_img"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <TextView
+        android:id="@+id/subhead_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:lineSpacingExtra="3dp"
+        android:text="Go anywhere that you \nlike to visit"
+        android:textAlignment="center"
+        android:textColor="#D5E9D6"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/destination"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:textSize="18dp"
+        android:textColor="#03092B"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/btn_bg"
+        android:text="continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subhead_destination"
+        app:layout_constraintVertical_bias="0.391"
+        tools:layout_editor_absoluteX="66dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
